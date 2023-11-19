@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet"
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+ 
+    <link rel="preconnect"
+          href=
+"https://fonts.gstatic.com">
+    <link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!-- linking style.css file-->
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+         <h1 class="heading text-center display-2">
+        Currency Converter
+    </h1>
+    <hr>
+    <div class="container">
+        <form action="ConvertServlet" method="get">
+                 <div class="main">
+                     <div class="form-group">
+                         <label for="oamount">
+                             Amount to Convert :
+                         </label>
+                         <input type="text" class="form-control searchBox" placeholder="0.00" id="oamount" name="usd">
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-6">
+                             <div class="input-group mb-3">
+                                 <div class="input-group-prepend">
+                                     <span class="input-group-text">From</span>
+                                 </div>
+                                 <select class="form-control from" id="sel1" name="currency">
+                                     <option value="cny">CNY</option>
+                                     <option value="cad">CAD</option>
+                                     <option value="aud">AUD</option>
+                                  </select>
+                             </div>
+                         </div>
+                          <div class="text-center">
+
+                         <!-- convert button -->
+                         <button class="btn btn-primary convert m-2" type="submit">
+                             Convert
+                         </button>
+                         <!-- reset button -->
+                         <button class="btn btn-primary m-2" onclick="clearVal()">
+                             Reset
+                         </button>
+                     </div>
+
+                 </div>
+
+                
+             </div>
+        </form>
+ 
+    <!-- linking script.js file -->
+    <script src="script.js"></script>
+    </body>
+</html>
